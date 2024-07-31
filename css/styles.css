@@ -7,10 +7,9 @@ body {
 }
 
 #posicao {
-    position: relative;
-    left: 100px;
-    top: 100px;
-    width: 300px;
+    position: sticky; /*ao dar scroll não quando chegar no limite, esta div nao sera escondida. serve muito para header onde o header deve sempre aparecer*/
+    top: 0;
+    width: 100%;
     height: 200px;
     background-color: #FFF;
     overflow: hidden; /*vai esconder o botao com classe .pulse pq ele esta com bottom -100px*/
