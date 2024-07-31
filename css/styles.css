@@ -13,6 +13,12 @@ body {
     width: 300px;
     height: 200px;
     background-color: #FFF;
+    overflow: hidden; /*vai esconder o botao com classe .pulse pq ele esta com bottom -100px*/
+}
+
+#posicao:hover .pulse {
+    /*quando passar o mouse em cima da div #posicao, a classe .pulse tera bottom 0px e vai aparecer dentro da div #posicao, mudando de -100px para 0px*/
+    bottom: 0;
 }
 
 .pulse {
@@ -20,8 +26,8 @@ body {
     background: none; /*removido background que vem padrao no button*/
     color: #ff760c;
     border: 2px solid;
-    top: 0;
     right: 0;
+    bottom: -100px;
     padding: 15px 40px; /*15px fica no top e buttom, 40px fica no left e right*/
     transition: 0.25s;
 }
