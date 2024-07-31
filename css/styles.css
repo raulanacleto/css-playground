@@ -1,19 +1,27 @@
 body {
     background-color: rgb(58, 58, 58);
-    background-image: url(/assets/xp-background.png); /*adicionado imagem para visualizar scroll com position fixed*/
     color: #fff;
     font-family: sans-serif;
     margin: 0;
     height: 200vh;
 }
 
+#posicao {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    width: 300px;
+    height: 200px;
+    background-color: #FFF;
+}
+
 .pulse {
-    position: fixed; /*posicao fixed - scroll nao vai rolar esse elemento*/
+    position: absolute; /*absolute posiciona sob o seletor #posicao que é o ancestral de .pulse*/
     background: none; /*removido background que vem padrao no button*/
     color: #ff760c;
     border: 2px solid;
-    top: 100px;
-    left: 100px;
+    top: 0;
+    right: 0;
     padding: 15px 40px; /*15px fica no top e buttom, 40px fica no left e right*/
     transition: 0.25s;
 }
