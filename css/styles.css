@@ -1,5 +1,6 @@
 body {
     background-color: rgb(58, 58, 58);
+    background-image: url(/assets/xp-background.png);
     color: #fff;
     font-family: sans-serif;
     margin: 0;
@@ -7,7 +8,7 @@ body {
 }
 
 .pulse {
-    position: relative; /*posicao relativa a ele mesmo - por default o position é static*/
+    position: fixed; /*posicao fixed - scroll nao vai rolar esse elemento*/
     background: none; /*removido background que vem padrao no button*/
     color: #ff760c;
     border: 2px solid;
