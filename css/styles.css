@@ -1,6 +1,6 @@
 body {
     background-color: rgb(58, 58, 58);
-    background-image: url(/assets/xp-background.png);
+    background-image: url(/assets/xp-background.png); /*adicionado imagem para visualizar scroll com position fixed*/
     color: #fff;
     font-family: sans-serif;
     margin: 0;
